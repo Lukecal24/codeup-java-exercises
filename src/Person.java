@@ -26,14 +26,14 @@ public class Person {
                 Person person1 = new Person("Luke");
 
                 // Test getName() method
-                System.out.println(person1.getName()); // Output: John
+                System.out.println(person1.getName()); // Output: Luke
 
                 // Test setName() method
                 person1.setName("Beno");
-                System.out.println(person1.getName()); // Output: Mary
+                System.out.println(person1.getName()); // Output: Beno
 
                 // Test sayHello() method
-                person1.sayHello(); // Output: Hello, my name is Mary
+                person1.sayHello(); // Output: Hello, my name is Beno
         }
 
 
