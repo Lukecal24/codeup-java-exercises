@@ -31,6 +31,10 @@ BONUS - add some static methods to the Dish class that compares two dishes in so
 
     }
 
+    public static boolean flipRecommendation(Dish dish){
+        return !dish.wouldRecommend;
+    }
+
 
 
 
