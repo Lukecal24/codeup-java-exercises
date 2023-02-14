@@ -6,6 +6,6 @@ public class DishTest {
         dish1.wouldRecommend = true;
 
 
-        dish1.printSummary()
+        dish1.printSummary();
     }
 }
