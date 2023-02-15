@@ -16,14 +16,14 @@ BONUS - add some static methods to the Dish class that compares two dishes in so
 
 
     public static String shoutDishName(Dish dish){
-       return String.format("%S", dish.nameOfDish);
+       return String.format("%S", dish.getNameOfDish());
     }
 
 
 
     public static void analyzeDishCost(Dish dish){
 
-        if (dish.costInCents > average) {
+        if (dish.getCostInCents() > average) {
             System.out.println("More expensive than average");
         } else {
             System.out.println("Less expensive than average");
@@ -32,7 +32,7 @@ BONUS - add some static methods to the Dish class that compares two dishes in so
     }
 
     public static boolean flipRecommendation(Dish dish){
-        return !dish.wouldRecommend;
+        return !dish.getWouldRecommend();
     }
 
 

@@ -23,17 +23,17 @@ public class Person {
 
         public static void main(String[] args){
 
-                Person person1 = new Person("Luke");
+                Person person1 = new Person("John");
+                Person person2 = person1;
+                System.out.println(person1.getName());
+                System.out.println(person2.getName());
+                person2.setName("Jane");
+                System.out.println(person1.getName());
+                System.out.println(person2.getName());
 
-                // Test getName() method
-                System.out.println(person1.getName()); // Output: Luke
 
-                // Test setName() method
-                person1.setName("Beno");
-                System.out.println(person1.getName()); // Output: Beno
 
-                // Test sayHello() method
-                person1.sayHello(); // Output: Hello, my name is Beno
+
         }
 
 
