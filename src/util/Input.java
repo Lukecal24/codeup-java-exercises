@@ -28,7 +28,7 @@ public class Input {
 
         public int getInt() {
             while (!scanner.hasNextInt()) {
-                scanner.nextLine(); // discard invalid input
+                scanner.nextLine();
                 System.out.print("Enter a valid number: ");
             }
             return scanner.nextInt();
