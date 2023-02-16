@@ -3,6 +3,8 @@ public class ArrayPractice {
     /* TODO: create an array of doubles called numbers and assign five different values (try with and without an initializer).
     Find the sum of all five double values using an enhanced for loop.
  */
+
+
     public static void main(String[] args) {
 
 
@@ -21,3 +23,6 @@ public class ArrayPractice {
     }
 
 }
+
+
+
