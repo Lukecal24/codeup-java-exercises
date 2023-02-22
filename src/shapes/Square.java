@@ -4,7 +4,7 @@ public class Square extends Quadrilateral{
 
 
 
-    public Square( int side) {
+    public Square(int side) {
         super(side, side);
 
     }
