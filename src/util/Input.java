@@ -27,11 +27,15 @@ public class Input {
         }
 
         public int getInt() {
-            while (!scanner.hasNextInt()) {
-                scanner.nextLine();
-                System.out.print("Enter a valid number: ");
+            String input = getString();
+            while (true) {
+                try {
+                    return Integer.valueOf(input);
+                } catch (NumberFormatException ex) {
+                    System.out.print("Enter a valid integer: ");
+                    input = getString();
+                }
             }
-            return scanner.nextInt();
         }
 //        double
 
@@ -45,11 +49,15 @@ public class Input {
         }
 
         public double getDouble() {
-            while (!scanner.hasNextDouble()) {
-                scanner.nextLine();
-                System.out.print("Enter a decimal number: ");
+            String input = getString();
+            while (true) {
+                try {
+                    return Double.valueOf(input);
+                } catch (NumberFormatException ex) {
+                    System.out.print("Enter a valid decimal number: ");
+                    input = getString();
+                }
             }
-            return scanner.nextDouble();
         }
 
 
